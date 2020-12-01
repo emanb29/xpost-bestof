@@ -1,0 +1,24 @@
+{
+  "name": "Crosspost Bestof",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A script that adds a context menu item to crosspost from a \"comment\" link for reddit submissions",
+  "homepage_url": "https://reddit.com/u/BeardedCrake",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": ["src/bg/snoowrap-v1.min.js", "src/bg/background.js"],
+    "persistent": false
+  },
+  "options_page": "src/options/index.html",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "*://*.reddit.com/*",
+    "*://reddit.com/*"
+  ]
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<h1>Setup</h1>
+	<p>
+		Go to <a href="https://www.reddit.com/prefs/apps">https://www.reddit.com/prefs/apps</a> and set up a script app. You can use anything for the redirect URI. Then input the following:
+	</p>
+	<form id="settings">
+		<label for="appName">App Name: </label><input type="text" name="appName" id="appName" /> <br>
+		<label for="appId">App Id (under "personal use script"): </label><input type="text" name="appId" id="appId" /> <br>
+		<label for="secret">App Secret: </label><input type="text" name="secret" id="secret" /> <br>
+		<label for="subreddit">Desired subreddit (no /r/): </label><input type="text" name="subreddit" id="subreddit" /> <br>
+		<label for="user">Reddit username: </label><input type="text" name="user" id="user" /> <br>
+		<label for="pass">Reddit password: </label><input type="password" name="pass" id="pass" /> <br>
+		<button id="saveSettings" type="submit">Save</button>
+	</form>
+	<script src="index.js"></script>
+</body>
+
+</html>
