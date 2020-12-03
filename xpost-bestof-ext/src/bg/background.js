@@ -86,6 +86,10 @@ chrome.runtime.onInstalled.addListener(() => {
   updateContextMenu();
   setupSnoo();
 });
+chrome.runtime.onStartup.addListener(() => {
+  updateContextMenu();
+  setupSnoo();
+});
 chrome.storage.onChanged.addListener((_changes, area) => {
   if (area == "sync") {
     updateContextMenu();
